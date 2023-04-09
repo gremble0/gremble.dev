@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/src/assets/fonts/JetBrainsMono-Regular.ttf');
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.5em;
+    color: #768cb4;
+    background-color: #151515;
+}
+
+.title {
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #e1b655;
+}
+
+.social-logo {
+    width: 40px;
+    height: 40px;
+}

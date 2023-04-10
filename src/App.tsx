@@ -1,28 +1,45 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
-import discordLogo from './assets/images/discord2.png';
+import discordLogo from './assets/images/discord.png';
 import githubLogo from './assets/images/github.png';
+import twitchLogo from './assets/images/twitch.png';
 
 function App() {
+    document.title = "gremble.dev";
+
     useEffect(() => {
-        document.title = "gremble.dev"
+        const linkToSocial = (url: string) => {
+            window.location.href = url;
+        };
+
+        const githubDiv = document.querySelector(".github") as HTMLDivElement;
+        const twitchDiv = document.querySelector(".twitch") as HTMLDivElement;
+
+        githubDiv.addEventListener("click", function() {
+            linkToSocial("https://github.com/gremble0");
+        });
+        twitchDiv.addEventListener("click", function() {
+            linkToSocial("https://twitch.tv/gremble");
+        });
     }, []);
-        
+
     return (
         <div className = "app">
             <h1 className = "title">gremble.dev</h1>
             
-            <div className = "main">
-                <div className = "socials">
-                    <div className = "social">
-                        <p className = "social-link">Discord</p>
-                        <img src = {discordLogo} className = "social-logo" />
-                    </div>
-                    <div className = "social">
-                        <a href = "https://github.com/gremble0" className = "social-link" target = "_blank">Github</a>
-                        <img src = {githubLogo} className = "social-logo" />
-                    </div>
+            <div className = "socials">
+                <div className = "discord social">
+                    <p className = "social-link">Discord gremble:1534</p>
+                    <img src = {discordLogo} className = "social-logo" />
+                </div>
+                <div className = "github social">
+                    <p className = "social-link">Github</p>
+                    <img src = {githubLogo} className = "social-logo" />
+                </div>
+                <div className = "twitch social">
+                    <p className = "social-link">Twitch</p>
+                    <img src = {twitchLogo} className = "social-logo" />
                 </div>
             </div>
         </div>

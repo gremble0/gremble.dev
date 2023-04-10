@@ -7,7 +7,8 @@ body {
     text-align: center;
     font-size: 1.15em;
     background-color: #151515;
-    color: #e1b655;
+    /*color: #e1b655;*/
+    color: #ffffff;
 }
 
 .title {
@@ -15,12 +16,12 @@ body {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: loading-text 1.5s steps(100, end);
+    animation: loading-text 4.5s steps(200, end);
 }
 
 @keyframes loading-text {
     from { width: 0 }
-    to { width: 25% }
+    to { width: 100% }
 }
 
 .socials {
@@ -43,7 +44,6 @@ body {
     height: 30px;
     margin: 5px;
     padding: 10px;
-    color: #ffffff;
     transition: all 0.2s ease-in-out;
 }
 .social:hover {

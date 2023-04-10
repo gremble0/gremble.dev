@@ -1,31 +1,26 @@
-import React, { useEffect, useState } from 'react';
 import './App.css';
 
 import discordLogo from './assets/images/discord.png';
 import githubLogo from './assets/images/github.png';
 import twitchLogo from './assets/images/twitch.png';
 
+function addSocialEventListeners() {
+    const githubDiv = document.querySelector(".github") as HTMLDivElement;
+    const twitchDiv = document.querySelector(".twitch") as HTMLDivElement;
+
+    githubDiv.addEventListener("click", function() {
+        window.location.href = "https://github.com/gremble0";
+    });
+    twitchDiv.addEventListener("click", function() {
+        window.location.href = "https://twitch.tv/gremble";
+    });
+}
+
 function App() {
     document.title = "gremble.dev";
 
-    useEffect(() => {
-        const linkToSocial = (url: string) => {
-            window.location.href = url;
-        };
-
-        const githubDiv = document.querySelector(".github") as HTMLDivElement;
-        const twitchDiv = document.querySelector(".twitch") as HTMLDivElement;
-
-        githubDiv.addEventListener("click", function() {
-            linkToSocial("https://github.com/gremble0");
-        });
-        twitchDiv.addEventListener("click", function() {
-            linkToSocial("https://twitch.tv/gremble");
-        });
-    }, []);
-
     return (
-        <div className = "app">
+        <div className = "app" onLoad = { addSocialEventListeners }>
             <h1 className = "title">gremble.dev</h1>
             
             <div className = "socials">

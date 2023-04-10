@@ -5,30 +5,22 @@
 
 body {
     text-align: center;
-    font-family: "JetBrains Mono", monospace;
     font-size: 1.15em;
     background-color: #151515;
     color: #e1b655;
 }
 
-h1 {
-  display: inline-block;
-  overflow: hidden;
-  border-right: .15em solid #e1b655;
-  white-space: nowrap;
-  animation:
-    typing 0.75s steps(70, end), /*3.5s, 40 steps*/
-    blink-caret 1.25s step-end infinite;
+.title {
+    font-family: "JetBrains Mono", monospace;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: loading-text 1.5s steps(100, end);
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 25% } /*100%*/
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #e1b655; }
+@keyframes loading-text {
+    from { width: 0 }
+    to { width: 25% }
 }
 
 .socials {

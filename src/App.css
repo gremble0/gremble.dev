@@ -17,13 +17,13 @@ h1 {
   border-right: .15em solid #e1b655;
   white-space: nowrap;
   animation:
-    typing 0.75s steps(70, end),
+    typing 0.75s steps(70, end), /*3.5s, 40 steps*/
     blink-caret 1.25s step-end infinite;
 }
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 25% }
+  to { width: 25% } /*100%*/
 }
 
 @keyframes blink-caret {

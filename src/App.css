@@ -3,52 +3,60 @@
     src: url('/src/assets/fonts/JetBrainsMono-Regular.ttf');
 }
 
-html {
-    text-align: center;
+@font-face {
+    font-family: 'Agressive';
+    src: url('/src/assets/fonts/AGRESSIVE.otf');
+}
+
+@font-face {
+    font-family: 'RussoOne';
+    src: url('/src/assets/fonts/RussoOne-Regular.ttf');
+}
+
+body {
     font-size: 1.15em;
-    /*background-color: #151515;*/
-    background: linear-gradient(to bottom right, #e1b655, #151515);
-    /*color: #e1b655;*/
+    background-color: #151515;
     color: #ffffff;
-    min-height: 100%;
-    height: 100%;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
-.title {
-    font-family: "JetBrains Mono", monospace;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: loading-text 4.5s steps(200, end);
-}
-
-@keyframes loading-text {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-.socials {
+.title-wrapper {
+    font-family: RussoOne;
+    margin-bottom: 100px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 400px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #1a1a1a;
-    border: 1px solid #000000;
+    text-align: center;
+}
+
+.title-name {
+    text-shadow: 0 0 150px #e1b655;
+    color: #e1b655;
+    display: inline-block;
+    margin: 0;
+}
+
+.socials {
+}
+
+.title-socials {
+    color: #e1b655;
+    font-family: RussoOne;
 }
 
 .social {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 400px;
     height: 30px;
     margin: 5px;
     padding: 10px;
     transition: all 0.2s ease-in-out;
 }
+
 .social:hover {
     cursor: pointer;
     transform: scale(1.1);

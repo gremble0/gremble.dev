@@ -13,6 +13,7 @@
     src: url('/src/assets/fonts/RussoOne-Regular.ttf');
 }
 
+/*** General styling ***/
 body {
     font-size: 1.15em;
     background-color: #151515;
@@ -21,6 +22,7 @@ body {
     margin-right: 10vw;
 }
 
+/*** Main title styling ***/
 .title-wrapper {
     font-family: RussoOne;
     margin-bottom: 100px;
@@ -38,6 +40,7 @@ body {
     margin: 0;
 }
 
+/*** Socials styling ***/
 .socials {
 }
 
@@ -75,14 +78,14 @@ body {
     height: 40px;
 }
 
+.linkedin {
+    background-color: #0066c8;
+}
+
 .discord {
-    background-color: #6c7fc9;
+    background-color: #7289db;
 }
 
 .github {
     background-color: #1b1f23;
-}
-
-.twitch {
-    background-color: #6b2497;
 }

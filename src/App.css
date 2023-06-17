@@ -22,6 +22,10 @@ body {
     margin-right: 10vw;
 }
 
+.nerdfont {
+    font-family: JetBrains Mono;
+}
+
 /*** Main title styling ***/
 .title-wrapper {
     font-family: RussoOne;

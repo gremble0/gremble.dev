@@ -8,7 +8,11 @@ function openInNewTab(url: string) {
     window.open(url, "_blank", "noreferrer")
 }
 
-function App() {
+function discordOnClick() {
+    navigator.clipboard.writeText("gremble");
+}
+
+export default function App() {
     document.title = "gremble.dev";
 
     return (
@@ -19,24 +23,24 @@ function App() {
                 <p>Software Engineer</p>
             </div>
             
-            
             <div className = "socials">
-                <h1 className = "title-socials">My Socials</h1>
-                <div className = "linkedin social" onClick={ () => openInNewTab("https://www.linkedin.com/in/herman-stornes-537308273") }>
+                <h1 className = "title-socials">Contact me</h1>
+                <div className = "linkedin social" onClick = { () => openInNewTab("https://www.linkedin.com/in/herman-stornes-537308273") }>
                     <p className = "social-link">Linkedin</p>
                     <img src = {linkedinLogo} className = "social-logo" />
                 </div>
-                <div className = "discord social" onClick={()=>""}>
-                    <p className = "social-link">Discord gremble:1534</p>
+                <div className = "discord social" onClick = { () => discordOnClick() }>
+                    <p className = "social-link">Discord: gremble <a className = "nerdfont">󱓥</a></p>
                     <img src = {discordLogo} className = "social-logo" />
                 </div>
-                <div className = "github social" onClick={ () => openInNewTab("https://github.com/gremble0") }>
+                <div className = "github social" onClick = { () => openInNewTab("https://github.com/gremble0") }>
                     <p className = "social-link">Github</p>
                     <img src = {githubLogo} className = "social-logo" />
                 </div>
             </div>
+
+            <div className = "projects">
+            </div>
         </div>
     );
 }
-
-export default App;

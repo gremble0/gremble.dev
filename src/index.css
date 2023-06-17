@@ -27,6 +27,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+    color: #e1b655;
+    font-family: RussoOne;
+}
+
+h2 {
+    text-align: center;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -49,18 +58,12 @@ code {
 
 .title-name {
     text-shadow: 0 0 150px #e1b655;
-    color: #e1b655;
-    display: inline-block;
     margin: 0;
 }
 
 /*** Socials styling ***/
 .socials {
-}
-
-.title-socials {
-    color: #e1b655;
-    font-family: RussoOne;
+    height: 50vh;
 }
 
 .social {
@@ -102,4 +105,34 @@ code {
 
 .github {
     background-color: #1b1f23;
+}
+
+/*** Projects styling ***/
+.projects {
+    direction: rtl;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.projects-list {
+    direction: rtl;
+    display: flex;
+}
+
+.title-projects {
+
+}
+
+.nattklar img {
+    width: 20em;
+}
+
+.gremblebot img {
+    width: 30em;
+}
+
+.snake img {
+    width: 30em;
 }

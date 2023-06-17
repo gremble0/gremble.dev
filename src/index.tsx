@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Carousel from "react-elastic-carousel"
 import Item from "./item"
+import './index.css';
 
 function openInNewTab(url: string) {
     window.open(url, "_blank", "noreferrer")
@@ -12,16 +11,8 @@ function discordOnClick() {
     navigator.clipboard.writeText("gremble");
 }
 
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 }
-];
-
 function App() {
     document.title = "gremble.dev";
-    const items = [1, 2, 3, 4];
 
     return (
         <div className = "app">
@@ -39,7 +30,7 @@ function App() {
                 </div>
                 <div className = "discord social" onClick = { () => discordOnClick() }>
                     <p className = "social-link">Discord: gremble <a className = "nerdfont">󱓥</a></p>
-                    <img src = { require("./assets/images/discord2.png") } className = "social-logo" />
+                    <img src = { require("./assets/images/discord.png") } className = "social-logo" />
                 </div>
                 <div className = "github social" onClick = { () => openInNewTab("https://github.com/gremble0") }>
                     <p className = "social-link">Github</p>
@@ -48,6 +39,21 @@ function App() {
             </div>
 
             <div className = "projects">
+                <h1 className = "title-projects">My projects</h1>
+                <div className = "projects-list">
+                    <div className = "project nattklar" onClick = { () => openInNewTab("https://github.com/gremble0/nattklar") }>
+                        <h2>Nattklar</h2>
+                        <img src = { require("./assets/images/homescreen.png") } />
+                    </div>
+                    <div className = "project gremblebot" onClick = { () => openInNewTab("https://github.com/gremble0/gremblebot") }>
+                        <h2>Gremblebot</h2>
+                        <img src = { require("./assets/images/gremblebot.png")} />
+                    </div>
+                    <div className = "project snake" onClick = { () => openInNewTab("https://github.com/gremble0/snake") }>
+                        <h2>Snake</h2>
+                        <img src = { require("./assets/images/snake.png") } />
+                    </div>
+                </div>
             </div>
         </div>
     );

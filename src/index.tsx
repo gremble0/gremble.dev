@@ -1,14 +1,10 @@
-import React, { createElement } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import Socials from './socials';
+import './index.css';
 
 function openInNewTab(url: string) {
     window.open(url, "_blank", "noreferrer")
-}
-
-function discordOnClick() {
-    navigator.clipboard.writeText("gremble");
 }
 
 function App() {
@@ -17,17 +13,17 @@ function App() {
     const socials = [
         {
             socialName: "linkedin",
-            imageSrc: "/linkedin.png",//`${imagePath}/linkedin.png`,
+            imageSrc: "/linkedin.png",
             url: "https://www.linkedin.com/in/herman-stornes-537308273"
         },
         {
             socialName: "discord",
-            imageSrc: "/discord.png", //`${imagePath}/discord.png`,
-            url: "https://www.linkedin.com/in/herman-stornes-537308273"
+            imageSrc: "/discord.png",
+            url: ""
         },
         {
             socialName: "github",
-            imageSrc: "/github.png", //`${imagePath}/github.png`,
+            imageSrc: "/github.png",
             url: "https://github.com/gremble0"
         }
     ]
@@ -70,22 +66,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-
-
-
-            // <div className = "socials">
-            //     <h1 className = "title-socials">Contact me</h1>
-            //     <div className = "linkedin social" onClick = { () => openInNewTab("https://www.linkedin.com/in/herman-stornes-537308273") }>
-            //         <p className = "social-link">Linkedin</p>
-            //         <img src = { require("./assets/images/linkedin.png") } className = "social-logo" />
-            //     </div>
-            //     <div className = "discord social" onClick = { () => discordOnClick() }>
-            //         <p className = "social-link">Discord: gremble <a className = "nerdfont">󱓥</a></p>
-            //         <img src = { require("./assets/images/discord.png") } className = "social-logo" />
-            //     </div>
-            //     <div className = "github social" onClick = { () => openInNewTab("https://github.com/gremble0") }>
-            //         <p className = "social-link">Github</p>
-            //         <img src = { require("./assets/images/github.png") } className = "social-logo" />
-            //     </div>
-            // </div>

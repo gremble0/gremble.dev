@@ -1,0 +1,40 @@
+/*** Socials styling ***/
+.socials {
+    height: 50vh;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.social:not(:hover) {
+  transform: scale(1);
+}
+
+.social-link {
+    font-weight: bold;
+}
+
+.social-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.linkedin {
+    background-color: #0066c8;
+}
+
+.discord {
+    background-color: #7289db;
+}
+
+.github {
+    background-color: #1b1f23;
+}

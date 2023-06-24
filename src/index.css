@@ -1,17 +1,17 @@
 /*** Loading fonts ***/
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('/src/assets/fonts/JetBrainsMono-Regular.ttf');
+    src: url('/public/assets/fonts/JetBrainsMono-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Agressive';
-    src: url('/src/assets/fonts/AGRESSIVE.otf');
+    src: url('/public/assets/fonts/AGRESSIVE.otf');
 }
 
 @font-face {
     font-family: 'RussoOne';
-    src: url('/src/assets/fonts/RussoOne-Regular.ttf');
+    src: url('/public/assets/fonts/RussoOne-Regular.ttf');
 }
 
 /*** General styling ***/
@@ -60,35 +60,4 @@ h2 {
 .title-name {
     text-shadow: 0 0 150px #e1b655;
     margin: 0;
-}
-
-
-/*** Projects styling ***/
-.projects {
-    direction: rtl;
-}
-
-.project:hover {
-    cursor: pointer;
-}
-
-.projects-list {
-    direction: rtl;
-    display: flex;
-}
-
-.title-projects {
-
-}
-
-.nattklar img {
-    width: 20em;
-}
-
-.gremblebot img {
-    width: 30em;
-}
-
-.snake img {
-    width: 30em;
 }

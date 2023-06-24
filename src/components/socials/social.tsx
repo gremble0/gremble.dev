@@ -1,5 +1,4 @@
 import { SocialProps } from "./types"
-import "./social.css"
 
 function Social({ socialName, imageSrc, url }: SocialProps) {
     let clipboardIcon;

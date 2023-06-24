@@ -3,8 +3,3 @@ export type SocialProps = {
     imageSrc: string;
     url: string;
 }
-
-export type Props = {
-    items: Array<SocialProps>;
-}
-

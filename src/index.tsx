@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Socials from './socials';
+import Socials from './components/socials/socials';
+import Projects from './components/projects/projects';
 import './index.css';
-
-function openInNewTab(url: string) {
-    window.open(url, "_blank", "noreferrer")
-}
 
 function App() {
     document.title = "gremble.dev";
@@ -13,18 +10,36 @@ function App() {
     const socials = [
         {
             socialName: "linkedin",
-            imageSrc: "/linkedin.png",
+            imageSrc: "/assets/images/linkedin.png",
             url: "https://www.linkedin.com/in/herman-stornes-537308273"
         },
         {
             socialName: "discord",
-            imageSrc: "/discord.png",
+            imageSrc: "/assets/images/discord.png",
             url: ""
         },
         {
             socialName: "github",
-            imageSrc: "/github.png",
+            imageSrc: "/assets/images/github.png",
             url: "https://github.com/gremble0"
+        }
+    ]
+
+    const projects = [
+        {
+            projectName: "nattklar",
+            imageSrc: "/assets/images/homescreen.png",
+            url: "https://github.com/gremble0/nattklar"
+        },
+        {
+            projectName: "gremblebot",
+            imageSrc: "/assets/images/gremblebot.png",
+            url: "https://github.com/gremble0/gremblebot"
+        },
+        {
+            projectName: "snake",
+            imageSrc: "/assets/images/snake.png",
+            url: "https://github.com/gremble0/snake"
         }
     ]
 
@@ -38,24 +53,8 @@ function App() {
 
             <Socials items={socials} />
             
+            <Projects items={projects} />
 
-            <div className = "projects">
-                <h1 className = "title-projects">My projects</h1>
-                <div className = "projects-list">
-                    <div className = "nattklar">
-                        <h2 className = "project" onClick = { () => openInNewTab("https://github.com/gremble0/nattklar") }>Nattklar <a className = "nerdfont"></a></h2>
-                        <img src = { require("./assets/images/homescreen.png") } />
-                    </div>
-                    <div className = "gremblebot">
-                        <h2 className = "project" onClick = { () => openInNewTab("https://github.com/gremble0/gremblebot") }>Gremblebot <a className = "nerdfont"></a></h2>
-                        <img src = { require("./assets/images/gremblebot.png")} />
-                    </div>
-                    <div className = "snake">
-                        <h2 className = "project" onClick = { () => openInNewTab("https://github.com/gremble0/snake") }>Snake <a className = "nerdfont"></a></h2>
-                        <img src = { require("./assets/images/snake.png") } />
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }

@@ -1,5 +1,10 @@
 import Social from './social';
-import { Props } from './types';
+import { SocialProps } from './types';
+import "./socials.css"
+
+type Props = {
+    items: Array<SocialProps>;
+}
 
 function Socials({ items }: Props) {
     return (

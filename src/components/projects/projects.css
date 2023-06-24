@@ -1,0 +1,29 @@
+/*** Projects styling ***/
+.projects {
+    direction: rtl;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.projects-list {
+    direction: rtl;
+    display: flex;
+}
+
+.title-projects {
+
+}
+
+.nattklar img {
+    width: 20em;
+}
+
+.gremblebot img {
+    width: 30em;
+}
+
+.snake img {
+    width: 30em;
+}

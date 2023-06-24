@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Socials from './components/socials/socials';
-import Projects from './components/projects/projects';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Socials from "./components/socials/socials";
+import Projects from "./components/projects/projects";
+import "./index.css";
 
 function App() {
     document.title = "gremble.dev";
@@ -46,7 +46,7 @@ function App() {
     return (
         <div className = "app">
             <div className = "title-wrapper">
-                <h2>Hi, I'm</h2>
+                <h2>Hi, I"m</h2>
                 <h1 className = "title-name">gremble</h1>
                 <p>Software Engineer</p>
             </div>
@@ -59,7 +59,7 @@ function App() {
     );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
     <App />

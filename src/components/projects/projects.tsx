@@ -1,6 +1,6 @@
-import Project from './project';
-import { ProjectProps } from './types';
-import './projects.css';
+import Project from "./project";
+import { ProjectProps } from "./types";
+import "./projects.css";
 
 type Props = {
     items: Array<ProjectProps>;

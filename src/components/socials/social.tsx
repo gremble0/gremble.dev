@@ -7,10 +7,15 @@ function Social({ socialName, imageSrc, url }: SocialProps) {
     } 
 
     return (
-        <div className={`social ${socialName}`} onClick = {() =>
-                url ? window.open(url, "_blank", "noreferrer") : navigator.clipboard.writeText("gremble") 
+        <div className = {`social ${socialName}`} onClick = { () =>
+                url ? window.open(url, "_blank", "noreferrer") : 
+                navigator.clipboard.writeText("gremble") 
             }>
-            <p className = "social-link">{socialName.charAt(0).toUpperCase() + socialName.slice(1)} {clipboardIcon}</p>
+            <p className = "social-link">{ 
+                    socialName.charAt(0).toUpperCase() + socialName.slice(1)
+                }
+                {clipboardIcon}
+            </p>
             <img className = "social-logo" src = {imageSrc} />
         </div>
     )

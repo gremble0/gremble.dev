@@ -1,5 +1,5 @@
-import Social from './social';
-import { SocialProps } from './types';
+import Social from "./social";
+import { SocialProps } from "./types";
 import "./socials.css"
 
 type Props = {

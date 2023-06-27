@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect, CSSProperties } from "react";
 import Social from "./social";
 import { SocialProps } from "./types";
 import "./socials.css"
@@ -22,21 +22,20 @@ function useWindowSize() {
 
 function Socials({ items }: Props) {
     let dimensions = useWindowSize();
-    var alignItems;
-    var socialsWidth;
-    if (dimensions[0] > 1000) {
-        socialsWidth = 30;
-        alignItems = "left";
-    } else if (dimensions[0] > 600) {
-        socialsWidth = 50;
-        alignItems = "left";
-    } else {
-        socialsWidth = 80;
-        alignItems = "center";
+    let socialsStyle: CSSProperties = {
+        width: "100%",
+        textAlign: "center",
     }
-
+    // if (dimensions[0] > 800) {
+    //     socialsStyle.width = "30%";
+    //     socialsStyle.textAlign = "left";
+    if (dimensions[0] > 1000) {
+        socialsStyle.width = "30%";
+        socialsStyle.textAlign = "left";
+    }
+//= {{width: `${socialsWidth}%`, textAlign: `${socialsTextAlign}`}}>
     return (
-        <div className = "socials" style = {{width: `${socialsWidth}%`}}>
+        <div className = "socials" style = {socialsStyle}>
             <h1 className = "title-socials">Contact me</h1>
             { items.map((item, i) => (
                 <Social key = {i} {...item} />

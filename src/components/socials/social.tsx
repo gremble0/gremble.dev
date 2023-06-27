@@ -1,4 +1,4 @@
-import { SocialProps } from "./types"
+import { SocialProps } from "./types";
 
 function Social({ socialName, imageSrc, url }: SocialProps) {
     let clipboardIcon;
@@ -10,7 +10,9 @@ function Social({ socialName, imageSrc, url }: SocialProps) {
         <div className = {`social ${socialName}`} onClick = { () =>
                 url ? window.open(url, "_blank", "noreferrer") : 
                 navigator.clipboard.writeText("gremble") 
-            }>
+            }
+            // style = {{width: `${socialWidth}%`}} >
+            >
             <p className = "social-link">{ 
                     socialName.charAt(0).toUpperCase() + socialName.slice(1)
                 }

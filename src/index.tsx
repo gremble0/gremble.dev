@@ -46,7 +46,7 @@ function App() {
     return (
         <div className = "app">
             <div className = "title-wrapper">
-                <h2>Hi, I"m</h2>
+                <h2>Hi, I'm</h2>
                 <h1 className = "title-name">gremble</h1>
                 <p>Software Engineer</p>
             </div>

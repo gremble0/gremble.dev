@@ -1,23 +1,11 @@
-import { useState, useLayoutEffect, CSSProperties } from "react";
-import Social from "./social";
+import { CSSProperties } from "react";
 import { SocialProps } from "./types";
+import Social from "./social";
+import { useWindowSize } from "../../utils/usewindowsize";
 import "./socials.css"
 
 type Props = {
     items: Array<SocialProps>;
-}
-
-function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-        function updateSize() {
-            setSize([window.innerWidth, window.innerHeight]);
-        }
-        window.addEventListener("resize", updateSize);
-        updateSize();
-        return () => window.removeEventListener("resize", updateSize);
-    }, []);
-    return size;
 }
 
 function Socials({ items }: Props) {
@@ -27,7 +15,7 @@ function Socials({ items }: Props) {
         textAlign: "center",
     }
     if (dimensions[0] > 1000) {
-        socialsStyle.width = "30%";
+        socialsStyle.width = "400px";
         socialsStyle.textAlign = "left";
     }
 

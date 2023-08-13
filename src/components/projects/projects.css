@@ -1,19 +1,24 @@
 /*** Projects styling ***/
-.projects {
-    direction: rtl;
+.project {
+    text-align: inherit;
+    transition: all 0.2s ease-in-out;
 }
 
 .project:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
-.projects-list {
-    direction: rtl;
-    display: flex;
+.project:not(:hover) {
+  transform: scale(1);
 }
 
 .title-projects {
+    text-align: right;
+}
 
+.nattklar, .snake {
+    text-align: right;
 }
 
 .nattklar img {

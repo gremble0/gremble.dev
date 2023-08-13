@@ -40,12 +40,6 @@ h2 {
     font-family: JetBrains Mono;
 }
 
-.social:hover, .project:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-
 /*** Main title styling ***/
 .title-wrapper {
     font-family: RussoOne;

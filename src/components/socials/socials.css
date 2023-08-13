@@ -13,6 +13,11 @@
     transition: all 0.2s ease-in-out;
 }
 
+.social:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .social:not(:hover) {
   transform: scale(1);
 }

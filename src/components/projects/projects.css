@@ -9,16 +9,21 @@
     transform: scale(1.1);
 }
 
-.project:not(:hover) {
-  transform: scale(1);
-}
-
 .title-projects {
     text-align: right;
 }
 
+/*** Individual projects ***/
 .nattklar, .snake {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.gremblebot {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .nattklar img {

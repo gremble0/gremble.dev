@@ -14,13 +14,13 @@
 }
 
 /*** Individual projects ***/
-.nattklar, .snake {
+.nattklar, .snake, .cchat {
     display: flex;
     flex-direction: column;
     align-items: end;
 }
 
-.gremblebot {
+.gremblebot, .gochat {
     display: flex;
     flex-direction: column;
     align-items: start;

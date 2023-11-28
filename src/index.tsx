@@ -37,10 +37,20 @@ function App() {
             url: "https://github.com/gremble0/gremblebot"
         },
         {
+            projectName: "cchat",
+            imageSrc: "/assets/images/cchat.png",
+            url: "https://github.com/gremble0/cchat"
+        },
+        {
+            projectName: "gochat",
+            imageSrc: "/assets/images/gochat.png",
+            url: "https://github.com/gremble0/gochat"
+        },
+        {
             projectName: "snake",
             imageSrc: "/assets/images/snake.png",
             url: "https://github.com/gremble0/snake"
-        }
+        },
     ]
 
     return (

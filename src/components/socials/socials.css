@@ -11,6 +11,7 @@
     margin: 5px;
     padding: 10px;
     transition: all 0.2s ease-in-out;
+    border-radius: 5px;
 }
 
 .social:hover {

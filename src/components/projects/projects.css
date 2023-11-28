@@ -13,6 +13,10 @@
     text-align: right;
 }
 
+img {
+    border-radius: 5px;
+}
+
 /*** Individual projects ***/
 .nattklar, .snake, .cchat {
     display: flex;
@@ -28,6 +32,26 @@
 
 .nattklar img {
     width: 20em;
+}
+
+
+.nattklar-body, .cchat-body, .snake-body {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.gremblebot-body, .gochat-body {
+    display: flex;
+    align-items: center;
+}
+
+.project-description {
+    margin: 2em;
+    padding: 2em;
+    background-color: #282828;
+    border-radius: 5px;
+    color: #cccccc;
 }
 
 .gremblebot img {

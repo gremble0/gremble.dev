@@ -18,30 +18,33 @@ img {
 }
 
 /*** Individual projects ***/
-.nattklar, .snake, .cchat {
+.nattklar,
+.gremblebot,
+.gochat {
     display: flex;
     flex-direction: column;
     align-items: end;
 }
 
-.gremblebot, .gochat {
+.kebab-lang,
+.snake,
+.cchat {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.nattklar img {
-    width: 20em;
-}
-
-
-.nattklar-body, .cchat-body, .snake-body {
+.nattklar-body,
+.gremblebot-body,
+.gochat-body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-.gremblebot-body, .gochat-body {
+.kebab-lang-body,
+.snake-body,
+.cchat-body {
     display: flex;
     align-items: center;
 }
@@ -52,6 +55,14 @@ img {
     background-color: #282828;
     border-radius: 5px;
     color: #cccccc;
+}
+
+.kebab-lang img {
+    width: 30em;
+}
+
+.nattklar img {
+    width: 20em;
 }
 
 .gremblebot img {

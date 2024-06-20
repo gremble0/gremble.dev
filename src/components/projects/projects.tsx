@@ -14,11 +14,11 @@ function Projects({ items }: Props) {
         displayImg = true;
     }
     return (
-        <div className = "projects">
-            <h1 className = "title-projects">My projects</h1>
-            <div className = "projects-list">
-                { items.map((item, i) => (
-                    <Project key = {i} {...item} />
+        <div className="projects">
+            <h1 className="title-projects">My projects</h1>
+            <div className="projects-list">
+                {items.map((item, i) => (
+                    <Project key={i} {...item} />
                 ))}
             </div>
         </div>

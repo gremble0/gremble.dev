@@ -20,7 +20,7 @@ body {
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.15em;
     background-color: #151515;
-    color: #ffffff;
+    color: #cccccc;
     margin-left: 10vw;
     margin-right: 10vw;
     -webkit-font-smoothing: antialiased;
@@ -38,6 +38,12 @@ h2 {
 
 .nerdfont {
     font-family: JetBrains Mono;
+}
+
+
+a:visited,
+a {
+    color: #e1b655;
 }
 
 /*** Main title styling ***/

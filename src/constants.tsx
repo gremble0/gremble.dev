@@ -64,6 +64,7 @@ const projects: ProjectProps[] = [
                 <p>Gremblebot is a multiplatform bot project that was one of my first larger projects. The bot operates on twitch, and discord, where it has differing functionalities.</p>
                 <p>On twitch the bot focuses on having some fun commands for user interaction as well as providing logging (also with some fun commands to for example get a random message from a given user) through a <b>mysql database</b>.</p>
                 <p>On discord the bot focuses on providing music streaming functionality using the <b>YoutubeDL</b> api and allowing users to queue and skip videos.</p>
+                <p>For a more detailed description see the <b>README.md</b> in the projects <a href="https://github.com/gremble0/gremblebot">github page</a></p>
             </div>
         ),
     },

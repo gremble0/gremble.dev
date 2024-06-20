@@ -20,10 +20,10 @@ function Socials({ items }: Props) {
     }
 
     return (
-        <div className = "socials" style = {socialsStyle}>
-            <h1 className = "title-socials">Contact me</h1>
-            { items.map((item, i) => (
-                <Social key = {i} {...item} />
+        <div className="socials" style={socialsStyle}>
+            <h1 className="title-socials">Contact me</h1>
+            {items.map((item, i) => (
+                <Social key={i} {...item} />
             ))}
         </div>
     )

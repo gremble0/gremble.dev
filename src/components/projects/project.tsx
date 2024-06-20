@@ -14,14 +14,15 @@ function Project({ projectName, imageSrc, url, description }: ProjectProps) {
     }
 
     return (
-        <div className = {projectName} style = {centerTitle}>
-            <h2 className = "project" onClick = { 
-                    () => window.open(url, "_blank", "noreferrer") 
-                }>{ projectName.charAt(0).toUpperCase() + projectName.slice(1) }
+        <div className={projectName} style={centerTitle}>
+            <h2 className="project" onClick={
+                () => window.open(url, "_blank", "noreferrer")
+                // Capitalize first letter
+            }>{projectName.charAt(0).toUpperCase() + projectName.slice(1)}
                 <a className="nerdfont"></a>
             </h2>
-            <div className = {projectName + "-body"}>
-                <img src = {imageSrc} style = {displayImg}/>
+            <div className={projectName + "-body"}>
+                <img src={imageSrc} style={displayImg} />
                 {description}
             </div>
         </div>

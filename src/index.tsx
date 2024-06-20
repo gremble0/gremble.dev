@@ -9,15 +9,15 @@ function App() {
     document.title = "gremble.dev";
 
     return (
-        <div className = "app">
-            <div className = "title-wrapper">
+        <div className="app">
+            <div className="title-wrapper">
                 <h2>Hi, I'm</h2>
-                <h1 className = "title-name">gremble</h1>
+                <h1 className="title-name">gremble</h1>
                 <p>Software Engineer</p>
             </div>
 
             <Socials items={socials} />
-            
+
             <Projects items={projects} />
 
         </div>
@@ -26,7 +26,7 @@ function App() {
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );

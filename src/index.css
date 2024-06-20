@@ -43,7 +43,11 @@ h2 {
 
 a:visited,
 a {
-    color: #e1b655;
+    color: #8197bf;
+}
+
+b {
+    color: #9aae6b;
 }
 
 /*** Main title styling ***/

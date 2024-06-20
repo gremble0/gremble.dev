@@ -13,12 +13,10 @@ const projects: ProjectProps[] = [
                 <ul>
                     <li>A home screen displaying the most relevant</li>
                     <li>An interactive map for looking up relevant data for any given location in norway</li>
-                    <li>A database containing descriptions of many astronomical objects, with
-                        images hand drawn by one of our team members, Henriette.</li>
-                    <li>A news screen displaying recent stargazing events that updates whenever
-                        relevant news are broadcasted by some select news sources</li>
+                    <li>A database containing descriptions of many astronomical objects, with images hand drawn by the team.</li>
+                    <li>A news screen displaying recent stargazing events that updates whenever relevant news are broadcasted by some select news sources</li>
                 </ul>
-                <p>For this project i was largely in charge of implementing the home screen and the interactive map, as well as managing large amounts of the <b>documentation</b></p>
+                <p>For this project i was largely in charge of implementing the home screen and the interactive map, as well as organizing the <b>documentation</b></p>
                 <p>For a more detailed description see the <b>README.md</b> in the projects <a href="https://github.com/gremble0/nattklar">github page</a></p>
             </div>
         ),
@@ -61,8 +59,8 @@ const projects: ProjectProps[] = [
         url: "https://github.com/gremble0/gremblebot",
         description: (
             <div className="project-description">
-                <p>Gremblebot is a multiplatform bot project that was one of my first larger projects. The bot operates on twitch, and discord, where it has differing functionalities.</p>
-                <p>On twitch the bot focuses on having some fun commands for user interaction as well as providing logging (also with some fun commands to for example get a random message from a given user) through a <b>mysql database</b>.</p>
+                <p>Gremblebot is a multiplatform bot project that was one of my first larger projects. It's written in <b>python</b> and it operates on twitch and discord, where it has differing functionalities.</p>
+                <p>On twitch the bot focuses on having some fun commands for user interaction as well as providing logging (also with some fun commands to for example get a random message from a given user or send some notification to someone the next time they send a message) through a <b>mysql database</b>.</p>
                 <p>On discord the bot focuses on providing music streaming functionality using the <b>YoutubeDL</b> api and allowing users to queue and skip videos.</p>
                 <p>For a more detailed description see the <b>README.md</b> in the projects <a href="https://github.com/gremble0/gremblebot">github page</a></p>
             </div>
@@ -99,7 +97,7 @@ const projects: ProjectProps[] = [
         url: "https://github.com/gremble0/snake",
         description: (
             <div className="project-description">
-                <p>This project is a GUI implementation of the classic Snake game written in <b>Java</b></p>
+                <p>This project is a GUI implementation of the classic Snake game written in <b>Java</b> using the <b>AWT</b> and <b>Swing</b></p>
                 <p>For a more detailed description see the <b>README.md</b> in the projects <a href="https://github.com/gremble0/snake">github page</a></p>
             </div>
         ),

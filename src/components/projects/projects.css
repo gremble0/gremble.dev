@@ -2,6 +2,8 @@
 .project {
     text-align: inherit;
     transition: all 0.2s ease-in-out;
+    font-family: RussoOne;
+    color: #8197bf;
 }
 
 .project:hover {

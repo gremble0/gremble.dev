@@ -40,16 +40,16 @@ const projects: ProjectProps[] = [
         url: "https://github.com/gremble0/nonstdlib",
         description: (
             <div className="project-description">
-                <p>Nonstdlib is a library for <b>C</b> that focuses on implementing some useful datastructures and algorithms that are absent from the C standard library.</p>
+                <p>Nonstdlib is a library for <b>C</b> that focuses on implementing some useful <b>datastructures and algorithms</b> that are absent from the C standard library. Its development is supported by SonarCloud's <b>static analysis tools</b> to ensure consistent interfaces, detecting possible memory leaks, etc.</p>
                 <p>Here are the modules currently implemented in this library</p>
                 <ul>
-                    <li><b>nhashtable.h:</b> Type and functions for a typical hashtable data structure.</li>
-                    <li><b>nerror.h:</b> Contains some functions for handling typical errors and printing more useful debug information. Also has a custom assert macro that uses nonstdlib's error handling on error</li>
-                    <li><b>nlinked_list.h:</b> Type and functions for the linked list data structure.</li>
-                    <li><b>nlist.h (WIP):</b> Type and functions for the list data structure.</li>
-                    <li><b>narray.h:</b> Utilities for normal C arrays.</li>
-                    <li><b>nstring.h:</b> Simple string interface that saves the length of strings instead of relying on nullbytes.</li>
-                    <li><b>nsort.h:</b> Some sorting algorithms for builtin C arrays.</li>
+                    <li><b>nhashtable.h</b>: An implementation of the hashtable datastructure - associate a key with some given value with. O(1) insertion complexity, O(1) lookup complexity.</li>
+                    <li><b>nerror.h</b>: Contains some functions for handling typical errors and printing more useful debug information. Also has a custom assert macro that uses nonstdlib's error handling on error</li>
+                    <li><b>nlinked_list.h</b>: An implementation of the linked list datastructure - specifically a doubly ended linked list. O(1) insertion complexity, O(n) lookup complexity.</li>
+                    <li><b>nlist.h</b>: An implementation of the dynamic array datastructure - something akin to ArrayLists in java or lists in python. O(1) insertion complexity, O(1) lookup complexity.</li>
+                    <li><b>narray.h</b>: Some handy utilities for managing builtin C arrays.</li>
+                    <li><b>nstring.h</b>: Simple string interface that saves the length of strings instead of relying on nullbytes, as well as some handy utilities for managing strings.</li>
+                    <li><b>nsort.h</b>: Some sorting algorithms for builtin C arrays.</li>
                 </ul>
                 <p>For a more detailed description see the <b>README.md</b> in the projects <a href="https://github.com/gremble0/nonstdlib">github page</a></p>
             </div>

@@ -27,7 +27,7 @@ const projects: ProjectProps[] = [
         url: "https://github.com/gremble0/kebab",
         description: (
             <div className="project-description">
-                <p>Kebab is a a <b>strongly typed</b>, <b>functional programming language</b>. I developed it from scratch in <b>C</b> using no external libraries except <a href="https://github.com/gremble0/nonstdlib">nonstdlib</a> which I started developing before kebab, but much of this library's development happened in parallel with the programming language as I saw the requirements unfold. See the section for nonstdlib for more information about that project.</p>
+                <p>Kebab is a a <b>strongly typed</b>, <b>functional programming language</b>. It consists of two main parts: a <b>compiler</b> written in <b>C++</b> with the <b>LLVM</b> compiler toolchain, and an interpreter that I developed from scratch in <b>C</b> using no external libraries except <a href="https://github.com/gremble0/nonstdlib">nonstdlib</a> which I started developing before kebab. Much of this library's development happened in parallel with the programming language as I saw the requirements unfold. See the section for nonstdlib for more information about that project. The project also has an extensive <b>test suite</b>. The compiler uses googles <b>GoogleTest</b> test framework, while the interpreter uses some internally developed testing functionality largely from <b>nonstdlib</b>.</p>
                 <p>For a more detailed description see the <b>README.md</b> in the projects <a href="https://github.com/gremble0/kebab">github page</a></p>
             </div>
         ),

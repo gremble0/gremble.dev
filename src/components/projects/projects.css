@@ -22,7 +22,6 @@ img {
 /*** Individual projects ***/
 .nattklar,
 .nonstdlib,
-.snake,
 .cchat {
     display: flex;
     flex-direction: column;
@@ -39,7 +38,6 @@ img {
 
 .nattklar-body,
 .nonstdlib-body,
-.snake-body,
 .cchat-body {
     display: flex;
     flex-direction: row-reverse;
@@ -74,9 +72,5 @@ img {
 }
 
 .gremblebot img {
-    width: 30em;
-}
-
-.snake img {
     width: 30em;
 }

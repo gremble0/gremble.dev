@@ -80,8 +80,7 @@ const projects: ProjectProps[] = [
         url: "https://github.com/gremble0/cchat",
         description: (
             <div className="project-description">
-                <p>Cchat is the GUI client for its sister project Gochat - the server application for Cchat.</p>
-                <p>Cchat uses <b>Raylib</b> to display the GUI and the standard <b>C</b> library to maintain separate <b>threads</b> for the different components of the program as well as communicating with the server over a <b>TCP</b> connection</p>
+                <p>Cchat is the GUI client for its sister project Gochat - the server application for Cchat. Cchat uses <b>Raylib</b> to display the GUI and the standard <b>C</b> library to maintain separate <b>threads</b> for the different components of the program as well as communicating with the server over a <b>TCP</b> connection</p>
                 <p>For a more detailed description see the <b>README.md</b> in the projects <a href="https://github.com/gremble0/cchat">github page</a></p>
             </div>
         ),
@@ -92,9 +91,7 @@ const projects: ProjectProps[] = [
         url: "https://github.com/gremble0/gochat",
         description: (
             <div className="project-description">
-                <p>Gochat is the server application for its sister project Cchat - the GUI client for Gochat</p>
-                <p>As the creative name implies gochat is written in <b>Go</b></p>
-                <p>Similar to gremblebot gochat also logs information about users and messages that connect to the server with a <b>postgres database</b>.</p>
+                <p>Gochat is the server application for its sister project Cchat - the GUI client for Gochat. As the name implies this project is written in <b>Go</b>. To handle connected clients the program uses <b>goroutines</b> to <b>asynchronously</b> handle several clients without allowing one client to block others. Gochat also logs information about users and messages that connect to the server with a <b>postgres database</b> which it also uses to <b>authenticate/register</b> connecting users.</p>
                 <p>For a more detailed description see the <b>README.md</b> in the projects <a href="https://github.com/gremble0/gochat">github page</a></p>
             </div>
         ),
@@ -110,7 +107,7 @@ const projects: ProjectProps[] = [
                 <ul>
                     <li><a href="https://github.com/gremble0/yellowbeans.nvim">yellowbeans.nvim</a>: A theme for neovim that integrates with other plugins and uses <b>Treesitter</b> and semantic tokens from any active <b>language servers</b> to provide semantically correct syntax highlighting.</li>
                     <li><a href="https://github.com/gremble0/bufferstack.nvim">bufferstack.nvim</a>: A plugin that improves navigation between several open files.</li>
-                    <li><a href="https://github.com/gremble0/killring.nvim">killring.nvim</a>: A plugin that gives the user a history of their clipboard with included search functionality through a TUI (Text-based User Interface) provided by <a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a>.</li>
+                    <li><a href="https://github.com/gremble0/killring.nvim">killring.nvim</a>: A plugin that gives the user a history of their clipboard with included search functionality through a <b>TUI (Text-based User Interface)</b> provided by <a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a>.</li>
                 </ul>
             </div>
         )

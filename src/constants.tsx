@@ -47,7 +47,7 @@ const projects: ProjectProps[] = [
         description: (
             <div className="project-description">
                 <p>Nonstdlib is a library for <b>C</b> that focuses on implementing some useful <b>datastructures and algorithms</b> that are absent from the C standard library. Its development is supported by <b>SonarCloud's static analysis tools</b> to ensure consistent interfaces, detecting possible memory leaks, etc.</p>
-                <p>Here are the modules currently implemented in this library</p>
+                <p>Here are the modules currently implemented in this library:</p>
                 <ul>
                     <li><b>nhashtable.h</b>: An implementation of the hashtable datastructure - associate a key with some given value with. O(1) insertion complexity, O(1) lookup complexity.</li>
                     <li><b>nerror.h</b>: Contains some functions for handling typical errors and printing more useful debug information. Also has a custom assert macro that uses nonstdlib's error handling on error</li>
@@ -98,6 +98,22 @@ const projects: ProjectProps[] = [
                 <p>For a more detailed description see the <b>README.md</b> in the projects <a href="https://github.com/gremble0/gochat">github page</a></p>
             </div>
         ),
+    },
+    {
+        projectName: "neovim-plugins",
+        imageSrc: "/assets/images/neovim.png",
+        url: "https://github.com/gremble0/yellowbeans.nvim",
+        description: (
+            <div className="project-description">
+                <p>I have developed several plugins for <b>Neovim</b>. These plugins written in <b>lua</b> help other developers improve their development experience.</p>
+                <p>Here are some of the plugins I have developed:</p>
+                <ul>
+                    <li><a href="https://github.com/gremble0/yellowbeans.nvim">yellowbeans.nvim</a>: A theme for neovim that integrates with other plugins and uses <b>Treesitter</b> and semantic tokens from any active <b>language servers</b> to provide semantically correct syntax highlighting.</li>
+                    <li><a href="https://github.com/gremble0/bufferstack.nvim">bufferstack.nvim</a>: A plugin that improves navigation between several open files.</li>
+                    <li><a href="https://github.com/gremble0/killring.nvim">killring.nvim</a>: A plugin that gives the user a history of their clipboard with included search functionality through a TUI (Text-based User Interface) provided by <a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a>.</li>
+                </ul>
+            </div>
+        )
     },
 ]
 

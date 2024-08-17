@@ -22,6 +22,7 @@ img {
 /*** Individual projects ***/
 .nattklar,
 .nonstdlib,
+.neovim-plugins,
 .cchat {
     display: flex;
     flex-direction: column;
@@ -38,6 +39,7 @@ img {
 
 .nattklar-body,
 .nonstdlib-body,
+.neovim-plugins-body,
 .cchat-body {
     display: flex;
     flex-direction: row-reverse;
@@ -73,4 +75,8 @@ img {
 
 .gremblebot img {
     width: 30em;
+}
+
+.neovim-plugins img {
+    width: 40em;
 }

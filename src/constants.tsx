@@ -49,6 +49,7 @@ const projects: ProjectProps[] = [
                 <p>Nonstdlib is a library for <b>C</b> that focuses on implementing some useful <b>datastructures and algorithms</b> that are absent from the C standard library. Its development is supported by <b>SonarCloud's static analysis tools</b> to ensure consistent interfaces, detecting possible memory leaks, etc.</p>
                 <p>Here are the modules currently implemented in this library:</p>
                 <ul>
+                    <li><b>narena.h</b>: An implementation of an arena allocator that simplifies memory management by grouping allocations into larger blocks instead of multiple smaller allocations with a convenient free function for freeing the entire block at once.</li>
                     <li><b>nhashtable.h</b>: An implementation of the hashtable datastructure - associate a key with some given value with. O(1) insertion complexity, O(1) lookup complexity.</li>
                     <li><b>nerror.h</b>: Contains some functions for handling typical errors and printing more useful debug information. Also has a custom assert macro that uses nonstdlib's error handling on error</li>
                     <li><b>nlinked_list.h</b>: An implementation of the linked list datastructure - specifically a doubly ended linked list. O(1) insertion complexity, O(n) lookup complexity.</li>
